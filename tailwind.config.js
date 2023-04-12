@@ -7,9 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-poppins)"],
+      },
       colors: {
         "custom-white": "#f8f8f8",
         "custom-orange": "#ff4d30",
+      },
+      spacing: {
+        "150%": "150%",
       },
     },
   },

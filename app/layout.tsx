@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Poppins } from "next/font/google";
 
 export const metadata = {
   title: "Car Rental",
@@ -6,14 +7,18 @@ export const metadata = {
     "An online platform that allows users to rent cars for personal or business use.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const poppins = Poppins({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-rubik",
+});
+
+function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-custom-white">{children}</body>
+      <body className={`${poppins.className} bg-custom-white`}>{children}</body>
     </html>
   );
 }
+
+export default RootLayout;

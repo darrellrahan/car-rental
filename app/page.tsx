@@ -1,11 +1,18 @@
+"use client";
+
 import Header from "./components/Header";
 import MobileNavbar from "./components/MobileNavbar";
+import React, { useState } from "react";
 
-export default function Home() {
+function Home() {
+  const [togglers, setTogglers] = useState({ mobileNavbar: false });
+
   return (
     <>
-      <Header />
-      {/* <MobileNavbar /> */}
+      <Header togglers={togglers} setTogglers={setTogglers} />
+      <MobileNavbar togglers={togglers} setTogglers={setTogglers} />
     </>
   );
 }
+
+export default Home;
