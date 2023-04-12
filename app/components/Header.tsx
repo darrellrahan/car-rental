@@ -1,23 +1,12 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useTogglersContext } from "../context/togglers";
 
-function Header({
-  togglers,
-  setTogglers,
-}: {
-  togglers: {
-    mobileNavbar: boolean;
-  };
-  setTogglers: React.Dispatch<
-    React.SetStateAction<{
-      mobileNavbar: boolean;
-    }>
-  >;
-}) {
+function Header() {
+  const { setMobileNavbar } = useTogglersContext();
+
   return (
     <header className="m-6 flex items-center justify-between">
       <div>
@@ -34,9 +23,7 @@ function Header({
       <div>
         <button
           className="text-3xl transition-all duration-300 ease-linear hover:text-custom-orange"
-          onClick={() =>
-            setTogglers({ ...togglers, mobileNavbar: !togglers.mobileNavbar })
-          }
+          onClick={() => setMobileNavbar(true)}
         >
           <AiOutlineMenu />
         </button>
