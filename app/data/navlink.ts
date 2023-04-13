@@ -4,5 +4,5 @@ export const navLink = [
   { id: 3, url: "/", link: "Models" },
   { id: 4, url: "/", link: "Testimonials" },
   { id: 5, url: "/", link: "Our Team" },
-  { id: 1, url: "/", link: "Contact" },
+  { id: 6, url: "/", link: "Contact" },
 ];
