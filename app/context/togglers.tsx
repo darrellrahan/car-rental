@@ -31,6 +31,11 @@ export const TogglersProvider = ({
   const [bookingFields, setBookingFields] = useState(true);
   const [bookingModal, setBookingModal] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflowY =
+      mobileNavbar || bookingModal ? "hidden" : "auto";
+  }, [mobileNavbar, bookingModal]);
+
   return (
     <TogglersContext.Provider
       value={{

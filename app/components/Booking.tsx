@@ -64,7 +64,7 @@ function Booking() {
             <input
               type="date"
               id={data.htmlId}
-              className="p-2 border border-light-grey text-custom-grey rounded text-sm"
+              className="p-2 border border-light-grey text-custom-grey rounded text-sm w-full"
               onChange={(e) =>
                 setBookingDate({
                   ...bookingDate,
