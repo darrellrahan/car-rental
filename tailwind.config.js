@@ -14,6 +14,7 @@ module.exports = {
         "custom-white": "#f8f8f8",
         "custom-orange": "#ff4d30",
         "custom-grey": "#706f7b",
+        "light-grey": "#ccd7e6",
       },
       spacing: {
         "150%": "150%",
@@ -24,6 +25,10 @@ module.exports = {
       boxShadow: {
         "orange-bottom": "0 10px 15px 0 rgba(255,83,48,.35);",
         "orange-bottom-hov": "0 10px 15px 0 rgba(255,83,48,.6);",
+        "booking-box": "0 10px 20px 0 rgba(0,0,0,.1)",
+      },
+      backgroundImage: {
+        "book-bg": "url('/images/book-bg.png')",
       },
     },
   },

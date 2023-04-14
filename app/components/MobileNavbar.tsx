@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { navLink } from "../data/navlink";
+import { navLink } from "../data/link";
 import { useTogglersContext } from "../context/togglers";
 
 function MobileNavbar() {
