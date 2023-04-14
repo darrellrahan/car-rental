@@ -14,6 +14,8 @@ module.exports = {
         "custom-white": "#f8f8f8",
         "custom-orange": "#ff4d30",
         "custom-grey": "#706f7b",
+        "custom-maroon": "#721c24",
+        "custom-pink": "#f8d7da",
         "light-grey": "#ccd7e6",
       },
       spacing: {
@@ -29,6 +31,9 @@ module.exports = {
       },
       backgroundImage: {
         "book-bg": "url('/images/book-bg.png')",
+      },
+      zIndex: {
+        1000: "1000",
       },
     },
   },
