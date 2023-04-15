@@ -8,6 +8,8 @@ import Hero from "./components/Hero";
 import Booking from "./components/Booking";
 import { InputValueProvider } from "./context/inputValue";
 import BookingModal from "./components/BookingModal";
+import QuickEasy from "./components/QuickEasy";
+import ScrollTop from "./components/ScrollTop";
 
 function Home() {
   return (
@@ -17,8 +19,10 @@ function Home() {
           <Header />
           <MobileNavbar />
           <Hero />
+          <ScrollTop />
           <Booking />
           <BookingModal />
+          <QuickEasy />
         </main>
       </InputValueProvider>
     </TogglersProvider>

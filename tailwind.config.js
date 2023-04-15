@@ -40,6 +40,9 @@ module.exports = {
       zIndex: {
         1000: "1000",
       },
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, minmax(15rem, 1fr));",
+      },
     },
   },
   plugins: [],

@@ -17,6 +17,9 @@ type TogglersContextType = {
   >;
   bookingModal: boolean;
   setBookingModal: React.Dispatch<React.SetStateAction<boolean>>;
+  goUp: boolean;
+  setGoUp: React.Dispatch<React.SetStateAction<boolean>>;
+  toTop(): void;
 };
 
 const TogglersContext = React.createContext<TogglersContextType>({
@@ -29,6 +32,9 @@ const TogglersContext = React.createContext<TogglersContextType>({
   setBookingFields: () => {},
   bookingModal: false,
   setBookingModal: () => {},
+  goUp: false,
+  setGoUp: () => {},
+  toTop: () => {},
 });
 
 export const useTogglersContext = () => useContext(TogglersContext);
@@ -44,11 +50,25 @@ export const TogglersProvider = ({
     green: false,
   });
   const [bookingModal, setBookingModal] = useState(false);
+  const [goUp, setGoUp] = useState(false);
 
   useEffect(() => {
     document.body.style.overflowY =
       mobileNavbar || bookingModal ? "hidden" : "auto";
   }, [mobileNavbar, bookingModal]);
+
+  useEffect(() => {
+    const onPageScroll = () => setGoUp(window.pageYOffset > 600 ? true : false);
+    window.addEventListener("scroll", onPageScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onPageScroll);
+    };
+  }, []);
+
+  function toTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   return (
     <TogglersContext.Provider
@@ -59,6 +79,9 @@ export const TogglersProvider = ({
         setBookingFields,
         bookingModal,
         setBookingModal,
+        goUp,
+        setGoUp,
+        toTop,
       }}
     >
       {children}
