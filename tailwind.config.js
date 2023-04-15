@@ -17,6 +17,7 @@ module.exports = {
         "custom-maroon": "#721c24",
         "custom-pink": "#f8d7da",
         "light-grey": "#ccd7e6",
+        "dark-grey": "#777",
       },
       spacing: {
         "150%": "150%",
