@@ -36,7 +36,7 @@ function Booking() {
             </label>
             <select
               id={data.htmlId}
-              className="p-2 border border-light-grey text-custom-grey rounded text-sm"
+              className="p-2 border border-light-grey text-custom-grey rounded text-sm bg-transparent"
               onChange={(e) =>
                 setBookingSelect({
                   ...bookingSelect,
@@ -64,7 +64,7 @@ function Booking() {
             <input
               type="date"
               id={data.htmlId}
-              className="p-2 border border-light-grey text-custom-grey rounded text-sm w-full"
+              className="p-2 border border-light-grey text-custom-grey rounded text-sm w-full bg-transparent"
               onChange={(e) =>
                 setBookingDate({
                   ...bookingDate,

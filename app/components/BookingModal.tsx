@@ -49,7 +49,7 @@ function BookingModal() {
               <p>{bookingDate["pickup-date"]} / </p>
               <input
                 type="time"
-                className="border border-dark-grey rounded text-sm px-2 text-center"
+                className="border border-dark-grey rounded text-sm px-2 text-center bg-transparent w-fit"
               />
             </span>
           </div>
@@ -63,7 +63,7 @@ function BookingModal() {
               <p>{bookingDate["pickup-date"]} / </p>
               <input
                 type="time"
-                className="border border-dark-grey rounded text-sm px-2 text-center"
+                className="border border-dark-grey rounded text-sm px-2 text-center bg-transparent w-fit"
               />
             </span>
           </div>
