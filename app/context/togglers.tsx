@@ -5,8 +5,16 @@ import React, { useContext, useEffect, useState } from "react";
 type TogglersContextType = {
   mobileNavbar: boolean;
   setMobileNavbar: React.Dispatch<React.SetStateAction<boolean>>;
-  bookingFields: boolean;
-  setBookingFields: React.Dispatch<React.SetStateAction<boolean>>;
+  bookingFields: {
+    red: boolean;
+    green: boolean;
+  };
+  setBookingFields: React.Dispatch<
+    React.SetStateAction<{
+      red: boolean;
+      green: boolean;
+    }>
+  >;
   bookingModal: boolean;
   setBookingModal: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -14,7 +22,10 @@ type TogglersContextType = {
 const TogglersContext = React.createContext<TogglersContextType>({
   mobileNavbar: false,
   setMobileNavbar: () => {},
-  bookingFields: true,
+  bookingFields: {
+    red: false,
+    green: false,
+  },
   setBookingFields: () => {},
   bookingModal: false,
   setBookingModal: () => {},
@@ -28,7 +39,10 @@ export const TogglersProvider = ({
   children: React.ReactNode;
 }) => {
   const [mobileNavbar, setMobileNavbar] = useState(false);
-  const [bookingFields, setBookingFields] = useState(true);
+  const [bookingFields, setBookingFields] = useState({
+    red: false,
+    green: false,
+  });
   const [bookingModal, setBookingModal] = useState(false);
 
   useEffect(() => {

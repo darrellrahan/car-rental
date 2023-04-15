@@ -16,14 +16,18 @@ module.exports = {
         "custom-grey": "#706f7b",
         "custom-maroon": "#721c24",
         "custom-pink": "#f8d7da",
-        "light-grey": "#ccd7e6",
+        "lighter-grey": "#dbdbdb",
+        "lightest-grey": "#ccd7e6",
         "dark-grey": "#777",
+        "light-green": "#c3fabe",
+        "dark-green": "#2a6817",
       },
       spacing: {
         "150%": "150%",
       },
       fontSize: {
         "3.2rem": "3.2rem",
+        xxs: "0.65rem",
       },
       boxShadow: {
         "orange-bottom": "0 10px 15px 0 rgba(255,83,48,.35);",

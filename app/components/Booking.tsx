@@ -11,16 +11,43 @@ function Booking() {
   const { bookingFields, setBookingFields, setBookingModal } =
     useTogglersContext();
 
+  function getSelectValue(id: string) {
+    switch (id) {
+      case "car-type":
+        return bookingSelect["car-type"];
+      case "pickup-location":
+        return bookingSelect["pickup-location"];
+      case "dropof-location":
+        return bookingSelect["dropof-location"];
+      default:
+        break;
+    }
+  }
+
   return (
     <div className="m-8 p-6 bg-white bg-book-bg rounded shadow-booking-box space-y-8">
       <div>
         <h1 className="text-2xl font-bold">Book a car</h1>
       </div>
       <div className="space-y-5">
-        {!bookingFields && (
+        {bookingFields.red && (
           <div className="flex items-center justify-between bg-custom-pink py-2 px-4 rounded text-custom-maroon font-medium">
             <p>All fields required!</p>
-            <button onClick={() => setBookingFields(true)}>
+            <button
+              onClick={() => setBookingFields({ ...bookingFields, red: false })}
+            >
+              <AiOutlineClose />
+            </button>
+          </div>
+        )}
+        {bookingFields.green && (
+          <div className="flex items-center justify-between bg-light-green py-2 px-4 rounded text-dark-green font-medium">
+            <p>Successfully booked!</p>
+            <button
+              onClick={() =>
+                setBookingFields({ ...bookingFields, green: false })
+              }
+            >
               <AiOutlineClose />
             </button>
           </div>
@@ -36,13 +63,14 @@ function Booking() {
             </label>
             <select
               id={data.htmlId}
-              className="p-2 border border-light-grey text-custom-grey rounded text-sm bg-transparent"
+              className="p-2 border border-lightest-grey text-custom-grey rounded text-sm bg-transparent"
               onChange={(e) =>
                 setBookingSelect({
                   ...bookingSelect,
                   [data.htmlId]: e.target.value,
                 })
               }
+              value={getSelectValue(data.htmlId)}
             >
               {data.options.map((data) => (
                 <option key={data.id} value={data.option} className="m-8">
@@ -64,12 +92,17 @@ function Booking() {
             <input
               type="date"
               id={data.htmlId}
-              className="p-2 border border-light-grey text-custom-grey rounded text-sm w-full bg-transparent"
+              className="p-2 border border-lightest-grey text-custom-grey rounded text-sm w-full bg-transparent"
               onChange={(e) =>
                 setBookingDate({
                   ...bookingDate,
                   [data.htmlId]: e.target.value,
                 })
+              }
+              value={
+                data.htmlId === "pickup-date"
+                  ? bookingDate["pickup-date"]
+                  : bookingDate["dropof-date"]
               }
             />
           </div>
@@ -77,17 +110,20 @@ function Booking() {
       </div>
       <div>
         <button
-          className="bg-custom-orange w-full shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear text-white p-4 font-bold rounded"
+          className="bg-custom-orange w-full shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear text-white p-2 font-bold rounded"
           onClick={() => {
-            if (
-              bookingDate["pickup-date"] !== "" &&
-              bookingDate["dropof-date"] !== ""
-            ) {
-              setBookingFields(true);
-              setBookingModal(true);
-            } else {
-              setBookingFields(false);
-            }
+            setBookingFields({
+              ...bookingFields,
+              red:
+                bookingDate["pickup-date"] !== "" &&
+                bookingDate["dropof-date"] !== ""
+                  ? false
+                  : true,
+            });
+            bookingDate["pickup-date"] !== "" &&
+            bookingDate["dropof-date"] !== ""
+              ? setBookingModal(true)
+              : null;
           }}
         >
           Search
