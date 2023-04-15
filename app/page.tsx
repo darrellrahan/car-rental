@@ -10,20 +10,25 @@ import { InputValueProvider } from "./context/inputValue";
 import BookingModal from "./components/BookingModal";
 import QuickEasy from "./components/QuickEasy";
 import ScrollTop from "./components/ScrollTop";
+import RentalFleet from "./components/RentalFleet";
+import { CurrentValueProvider } from "./context/currentValue";
 
 function Home() {
   return (
     <TogglersProvider>
       <InputValueProvider>
-        <main>
-          <Header />
-          <MobileNavbar />
-          <Hero />
-          <ScrollTop />
-          <Booking />
-          <BookingModal />
-          <QuickEasy />
-        </main>
+        <CurrentValueProvider>
+          <main>
+            <Header />
+            <MobileNavbar />
+            <Hero />
+            <ScrollTop />
+            <Booking />
+            <BookingModal />
+            <QuickEasy />
+            <RentalFleet />
+          </main>
+        </CurrentValueProvider>
       </InputValueProvider>
     </TogglersProvider>
   );

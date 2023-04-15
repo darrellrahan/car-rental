@@ -90,7 +90,7 @@ function BookingModal() {
           </div>
           <div>
             <Image
-              src={`/images/${bookingSelect["car-type"]}.jpg`}
+              src={`/images/${bookingSelect["car-type"]}.png`}
               alt={bookingSelect["car-type"]}
               width={300}
               height={300}
