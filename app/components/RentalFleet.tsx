@@ -8,7 +8,7 @@ function RentalFleet() {
 
   const carDetail = carDetails.find((data) => data.car === rentalFleet);
 
-  if (!carDetail) return <h1>shite</h1>;
+  if (!carDetail) return null;
 
   return (
     <div className="px-8 py-16 text-center space-y-8">
@@ -39,42 +39,81 @@ function RentalFleet() {
         <Image
           src={`/images/${carDetail.car}.png`}
           alt={carDetail.car}
-          width={300}
-          height={300}
+          width={500}
+          height={500}
           className="m-auto"
         />
-        <h1>${carDetail.price} / rent per day</h1>
-        <table>
-          <tr>
-            <td>Model</td>
-            <td>{carDetail.model}</td>
-          </tr>
-          <tr>
-            <td>Mark</td>
-            <td>{carDetail.mark}</td>
-          </tr>
-          <tr>
-            <td>Year</td>
-            <td>{carDetail.year}</td>
-          </tr>
-          <tr>
-            <td>Doors</td>
-            <td>{carDetail.doors}</td>
-          </tr>
-          <tr>
-            <td>AC</td>
-            <td>{carDetail.ac}</td>
-          </tr>
-          <tr>
-            <td>Transmission</td>
-            <td>{carDetail.transmission}</td>
-          </tr>
-          <tr>
-            <td>Fuel</td>
-            <td>{carDetail.fuel}</td>
-          </tr>
-        </table>
-        <button>Reserve Now</button>
+      </div>
+      <div className="w-fit m-auto space-y-4">
+        <div>
+          <h1 className="bg-custom-orange p-2 text-white flex items-center gap-2 justify-center">
+            <span className="text-2xl font-bold">${carDetail.price}</span>
+            <span className="text-lg">/ rent per day</span>
+          </h1>
+          <table>
+            <tr>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                Model
+              </td>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                {carDetail.model}
+              </td>
+            </tr>
+            <tr>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                Mark
+              </td>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                {carDetail.mark}
+              </td>
+            </tr>
+            <tr>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                Year
+              </td>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                {carDetail.year}
+              </td>
+            </tr>
+            <tr>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                Doors
+              </td>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                {carDetail.doors}
+              </td>
+            </tr>
+            <tr>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                AC
+              </td>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                {carDetail.ac}
+              </td>
+            </tr>
+            <tr>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                Transmission
+              </td>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                {carDetail.transmission}
+              </td>
+            </tr>
+            <tr>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                Fuel
+              </td>
+              <td className="border-2 border-dark-grey py-2 px-6 text-sm">
+                {carDetail.fuel}
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <button className="text-xl w-full font-bold bg-custom-orange p-2 text-white shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear rounded">
+            Reserve Now
+          </button>
+        </div>
       </div>
     </div>
   );

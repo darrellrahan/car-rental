@@ -5,12 +5,12 @@ import { IoIosArrowUp } from "react-icons/io";
 function ScrollTop() {
   const { goUp, toTop } = useTogglersContext();
 
-  if (!goUp) return null;
-
   return (
     <button
       onClick={() => toTop()}
-      className="fixed bottom-8 right-8 bg-custom-orange p-1.5 text-3xl text-white"
+      className={`fixed ${
+        !goUp ? "-bottom-16" : "bottom-8"
+      } right-8 bg-custom-orange p-1.5 text-3xl text-white transition-all duration-300 ease-linear`}
     >
       <IoIosArrowUp />
     </button>
