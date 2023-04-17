@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTogglersContext } from "../context/togglers";
 import { IoIosArrowUp } from "react-icons/io";
 
 function ScrollTop() {
-  const { goUp, toTop } = useTogglersContext();
+  const { goUp, setGoUp } = useTogglersContext();
+
+  useEffect(() => {
+    const onPageScroll = () => setGoUp(window.pageYOffset > 600 ? true : false);
+    window.addEventListener("scroll", onPageScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onPageScroll);
+    };
+  }, []);
+
+  function toTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   return (
     <button

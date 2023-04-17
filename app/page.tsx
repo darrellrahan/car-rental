@@ -9,12 +9,13 @@ import Booking from "./components/Booking";
 import { InputValueProvider } from "./context/inputValue";
 import BookingModal from "./components/BookingModal";
 import QuickEasy from "./components/QuickEasy";
-import ScrollTop from "./components/ScrollTop";
+import ToTop from "./components/ToTop";
 import RentalFleet from "./components/RentalFleet";
 import { CurrentValueProvider } from "./context/currentValue";
 import SaveBig from "./components/SaveBig";
 import ChooseUs from "./components/ChooseUs";
 import Testimonials from "./components/Testimonials";
+import Faq from "./components/Faq";
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function Home() {
             <Header />
             <MobileNavbar />
             <Hero />
-            <ScrollTop />
+            <ToTop />
             <Booking />
             <BookingModal />
             <QuickEasy />
@@ -33,6 +34,7 @@ function Home() {
             <SaveBig />
             <ChooseUs />
             <Testimonials />
+            <Faq />
           </main>
         </CurrentValueProvider>
       </InputValueProvider>

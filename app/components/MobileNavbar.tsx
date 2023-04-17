@@ -1,11 +1,15 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { navLink } from "../data/link";
 import { useTogglersContext } from "../context/togglers";
 
 function MobileNavbar() {
   const { mobileNavbar, setMobileNavbar } = useTogglersContext();
+
+  useEffect(() => {
+    document.body.style.overflowY = mobileNavbar ? "hidden" : "auto";
+  }, [mobileNavbar]);
 
   return (
     <nav

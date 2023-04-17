@@ -19,7 +19,18 @@ type TogglersContextType = {
   setBookingModal: React.Dispatch<React.SetStateAction<boolean>>;
   goUp: boolean;
   setGoUp: React.Dispatch<React.SetStateAction<boolean>>;
-  toTop(): void;
+  showAnswer: {
+    q1: boolean;
+    q2: boolean;
+    q3: boolean;
+  };
+  setShowAnswer: React.Dispatch<
+    React.SetStateAction<{
+      q1: boolean;
+      q2: boolean;
+      q3: boolean;
+    }>
+  >;
 };
 
 const TogglersContext = React.createContext<TogglersContextType>({
@@ -34,7 +45,8 @@ const TogglersContext = React.createContext<TogglersContextType>({
   setBookingModal: () => {},
   goUp: false,
   setGoUp: () => {},
-  toTop: () => {},
+  showAnswer: { q1: false, q2: false, q3: false },
+  setShowAnswer: () => {},
 });
 
 export const useTogglersContext = () => useContext(TogglersContext);
@@ -51,24 +63,11 @@ export const TogglersProvider = ({
   });
   const [bookingModal, setBookingModal] = useState(false);
   const [goUp, setGoUp] = useState(false);
-
-  useEffect(() => {
-    document.body.style.overflowY =
-      mobileNavbar || bookingModal ? "hidden" : "auto";
-  }, [mobileNavbar, bookingModal]);
-
-  useEffect(() => {
-    const onPageScroll = () => setGoUp(window.pageYOffset > 600 ? true : false);
-    window.addEventListener("scroll", onPageScroll);
-
-    return () => {
-      window.removeEventListener("scroll", onPageScroll);
-    };
-  }, []);
-
-  function toTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  const [showAnswer, setShowAnswer] = useState({
+    q1: false,
+    q2: false,
+    q3: false,
+  });
 
   return (
     <TogglersContext.Provider
@@ -81,7 +80,8 @@ export const TogglersProvider = ({
         setBookingModal,
         goUp,
         setGoUp,
-        toTop,
+        showAnswer,
+        setShowAnswer,
       }}
     >
       {children}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiFillInfoCircle, AiOutlineClose } from "react-icons/ai";
 import { useTogglersContext } from "../context/togglers";
 import { useInputValueContext } from "../context/inputValue";
@@ -10,6 +10,10 @@ function BookingModal() {
     useTogglersContext();
   const { bookingSelect, bookingDate, clearBookingInputs } =
     useInputValueContext();
+
+  useEffect(() => {
+    document.body.style.overflowY = bookingModal ? "hidden" : "auto";
+  }, [bookingModal]);
 
   if (!bookingModal) return null;
 

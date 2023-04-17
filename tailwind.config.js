@@ -35,10 +35,12 @@ module.exports = {
         "orange-bottom": "0 10px 15px 0 rgba(255,83,48,.35);",
         "orange-bottom-hov": "0 10px 15px 0 rgba(255,83,48,.6);",
         "white-box": "0 10px 20px 0 rgba(0,0,0,.1)",
+        "faq-divider": "0 1px 3px 0 rgba(0,0,0,.1);",
       },
       backgroundImage: {
         "book-bg": "url('/images/book-bg.png')",
         "chooseus-bg": "url('/images/chooseus-bg.png')",
+        "faq-bg": "url('/images/faq-bg.png')",
       },
       zIndex: {
         1000: "1000",
