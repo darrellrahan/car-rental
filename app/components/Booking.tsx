@@ -25,7 +25,7 @@ function Booking() {
   }
 
   return (
-    <div className="m-8 p-6 bg-white bg-book-bg rounded shadow-booking-box space-y-8">
+    <div className="m-8 p-6 bg-white bg-book-bg rounded shadow-white-box space-y-8">
       <div>
         <h1 className="text-2xl font-bold">Book a car</h1>
       </div>

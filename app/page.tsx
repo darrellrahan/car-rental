@@ -14,6 +14,7 @@ import RentalFleet from "./components/RentalFleet";
 import { CurrentValueProvider } from "./context/currentValue";
 import SaveBig from "./components/SaveBig";
 import ChooseUs from "./components/ChooseUs";
+import Testimonials from "./components/Testimonials";
 
 function Home() {
   return (
@@ -31,6 +32,7 @@ function Home() {
             <RentalFleet />
             <SaveBig />
             <ChooseUs />
+            <Testimonials />
           </main>
         </CurrentValueProvider>
       </InputValueProvider>

@@ -52,7 +52,7 @@ export const cars = [
   { id: 3, car: "Toyota Camry" },
   { id: 4, car: "BMW 320 ModernLine" },
   { id: 5, car: "Mercedez-Benz GLK" },
-  { id: 6, car: "Mitsubishi Xpander" },
+  { id: 6, car: "VW Passat CC" },
 ];
 
 export const carDetails = [
@@ -118,11 +118,11 @@ export const carDetails = [
   },
   {
     id: 6,
-    car: "Mitsubishi Xpander",
+    car: "VW Passat CC",
     price: 25,
-    model: "Xpander",
-    mark: "Mitsubishi",
-    year: "2016",
+    model: "Passat CC",
+    mark: "Volkswagen",
+    year: "2008",
     doors: "4",
     ac: "Yes",
     transmission: "Automatic",

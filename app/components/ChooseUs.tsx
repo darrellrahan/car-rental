@@ -5,7 +5,7 @@ import { chooseUs } from "../data/content";
 
 function ChooseUs() {
   return (
-    <div className="p-8 bg-chooseus-bg bg-no-repeat bg-cover">
+    <div className="p-8 my-8 bg-chooseus-bg bg-no-repeat bg-cover">
       <div className="space-y-6">
         <div>
           <Image
@@ -36,7 +36,7 @@ function ChooseUs() {
           </span>
         </button>
       </div>
-      <div className="grid grid-cols-fluid gap-8">
+      <div className="grid grid-cols-fluid gap-6">
         {chooseUs.map((data) => (
           <div key={data.id} className="flex flex-col text-center">
             <Image

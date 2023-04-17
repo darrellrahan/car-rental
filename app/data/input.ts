@@ -14,7 +14,7 @@ export const bookingInputs = {
         { id: 3, option: "Toyota Camry" },
         { id: 4, option: "BMW 320 ModernLine" },
         { id: 5, option: "Mercedez-Benz GLK" },
-        { id: 6, option: "Mitsubishi Xpander" },
+        { id: 6, option: "VW Passat CC" },
       ],
     },
     {
