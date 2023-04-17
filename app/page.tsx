@@ -12,6 +12,8 @@ import QuickEasy from "./components/QuickEasy";
 import ScrollTop from "./components/ScrollTop";
 import RentalFleet from "./components/RentalFleet";
 import { CurrentValueProvider } from "./context/currentValue";
+import SaveBig from "./components/SaveBig";
+import ChooseUs from "./components/ChooseUs";
 
 function Home() {
   return (
@@ -27,6 +29,8 @@ function Home() {
             <BookingModal />
             <QuickEasy />
             <RentalFleet />
+            <SaveBig />
+            <ChooseUs />
           </main>
         </CurrentValueProvider>
       </InputValueProvider>

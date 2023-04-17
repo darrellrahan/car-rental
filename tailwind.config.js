@@ -16,17 +16,19 @@ module.exports = {
         "custom-grey": "#706f7b",
         "custom-maroon": "#721c24",
         "custom-pink": "#f8d7da",
+        "light-green": "#c3fabe",
+        "lighter-black": "#333",
         "lighter-grey": "#dbdbdb",
         "lightest-grey": "#ccd7e6",
-        "dark-grey": "#777",
-        "light-green": "#c3fabe",
         "dark-green": "#2a6817",
+        "dark-grey": "#777",
       },
       spacing: {
         "150%": "150%",
       },
       fontSize: {
         "3.2rem": "3.2rem",
+        "2.5rem": "2.5rem",
         xxs: "0.65rem",
       },
       boxShadow: {
@@ -36,6 +38,7 @@ module.exports = {
       },
       backgroundImage: {
         "book-bg": "url('/images/book-bg.png')",
+        "chooseus-bg": "url('/images/chooseus-bg.png')",
       },
       zIndex: {
         1000: "1000",

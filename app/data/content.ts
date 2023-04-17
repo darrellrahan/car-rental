@@ -22,6 +22,30 @@ export const quickEasy = [
   },
 ];
 
+export const chooseUs = [
+  {
+    id: 1,
+    img: "/images/cross-country.png",
+    title: "Cross Country Drive",
+    content:
+      "Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.",
+  },
+  {
+    id: 2,
+    img: "/images/all-inclusive.png",
+    title: "All Inclusive Pricing",
+    content:
+      "Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.",
+  },
+  {
+    id: 3,
+    img: "/images/no-hidden.png",
+    title: "No Hidden Charges",
+    content:
+      "Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.",
+  },
+];
+
 export const cars = [
   { id: 1, car: "Audi A1 S-Line" },
   { id: 2, car: "VW Golf 6" },
