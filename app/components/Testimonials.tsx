@@ -23,7 +23,7 @@ function Testimonials() {
             The booking was easy and the rental rates were very affordable. "
           </p>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-center gap-4">
           <div>
             <Image
               src="/images/parry-hotter.jpg"

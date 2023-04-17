@@ -41,7 +41,7 @@ function SingleFaq({
       <button
         className={`${
           getState(id) ? "bg-custom-orange text-white shadow-orange-bottom" : ""
-        } text-left font-medium text-lg flex items-center gap-2 p-6`}
+        } text-left font-medium text-lg flex items-center justify-between p-6 w-full`}
         onClick={() => setShowAnswer(getParams(id))}
       >
         <span>

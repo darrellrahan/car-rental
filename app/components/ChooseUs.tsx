@@ -6,23 +6,24 @@ import { chooseUs } from "../data/content";
 function ChooseUs() {
   return (
     <div className="p-8 my-8 bg-chooseus-bg bg-no-repeat bg-cover">
-      <div className="space-y-6">
+      <div className="space-y-6 text-center">
         <div>
           <Image
             src="/images/chooseus-threecars.png"
             alt="choose us"
             width={600}
             height={600}
+            className="m-auto"
           />
         </div>
-        <div className="text-center font-bold space-y-2">
+        <div className="font-bold space-y-2">
           <h3 className="text-xl">Why Choose Us</h3>
           <h1 className="text-2.5rem leading-tight">
             Best valued deals you will ever find
           </h1>
         </div>
         <div>
-          <p className="text-center text-custom-grey">
+          <p className="text-custom-grey">
             Discover the best deals you'll ever find with our unbeatable offers.
             We're dedicated to providing you with the best value for your money.
           </p>
