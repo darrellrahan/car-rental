@@ -15,10 +15,8 @@ const poppins = Poppins({
 
 function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} bg-custom-white scroll-smooth`}>
-        {children}
-      </body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${poppins.className} bg-custom-white`}>{children}</body>
     </html>
   );
 }

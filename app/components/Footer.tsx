@@ -49,44 +49,44 @@ function Footer() {
         <h1 className="font-bold text-2xl">COMPANY</h1>
         <ul className="space-y-2">
           <li>
-            <Link
-              href="/"
+            <a
+              href="#top"
               className="hover:text-custom-orange transition-all duration-300 ease-linear"
             >
               New York
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              href="/"
+            <a
+              href="#top"
               className="hover:text-custom-orange transition-all duration-300 ease-linear"
             >
               Careers
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              href="/"
+            <a
+              href="#top"
               className="hover:text-custom-orange transition-all duration-300 ease-linear"
             >
               Mobile
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              href="/"
+            <a
+              href="#top"
               className="hover:text-custom-orange transition-all duration-300 ease-linear"
             >
               Blog
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              href="/"
+            <a
+              href="#top"
               className="hover:text-custom-orange transition-all duration-300 ease-linear"
             >
               How we work
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
