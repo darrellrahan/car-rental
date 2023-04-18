@@ -30,7 +30,7 @@ function ChooseUs() {
         </div>
       </div>
       <div className="flex justify-center my-10">
-        <button className="bg-custom-orange flex items-center gap-2 justify-center py-3 px-4 shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear rounded border-2 border-custom-orange font-bold text-white">
+        <button className="bg-custom-orange flex items-center gap-2 justify-center p-4 shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear rounded font-bold text-white">
           <span>Find Details</span>
           <span className="text-xl">
             <IoIosArrowForward />

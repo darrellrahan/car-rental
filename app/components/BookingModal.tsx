@@ -120,7 +120,7 @@ function BookingModal() {
               <input
                 type={data.type}
                 placeholder={data.placeholder}
-                className="bg-lighter-grey text p-3 text-sm placeholder:text-custom-grey rounded"
+                className="bg-lighter-grey p-3 text-sm placeholder:text-custom-grey rounded"
               />
               <span className="text-xxs">This field is required.</span>
             </div>

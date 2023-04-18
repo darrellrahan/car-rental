@@ -16,6 +16,8 @@ import SaveBig from "./components/SaveBig";
 import ChooseUs from "./components/ChooseUs";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
+import DownloadApp from "./components/DownloadApp";
+import Footer from "./components/Footer";
 
 function Home() {
   return (
@@ -35,6 +37,8 @@ function Home() {
             <ChooseUs />
             <Testimonials />
             <Faq />
+            <DownloadApp />
+            <Footer />
           </main>
         </CurrentValueProvider>
       </InputValueProvider>
