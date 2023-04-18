@@ -15,14 +15,16 @@ function ScrollTop() {
   }, []);
 
   return (
-    <a
-      href="#top"
-      className={`fixed ${
-        !goUp ? "-bottom-16" : "bottom-8"
-      } right-8 bg-custom-orange p-1.5 text-3xl text-white transition-all duration-300 ease-linear`}
-    >
-      <IoIosArrowUp />
-    </a>
+    <section id="to-top">
+      <a
+        href="#top"
+        className={`fixed ${
+          !goUp ? "-bottom-16" : "bottom-8"
+        } right-8 bg-custom-orange p-1.5 text-3xl text-white transition-all duration-300 ease-linear`}
+      >
+        <IoIosArrowUp />
+      </a>
+    </section>
   );
 }
 

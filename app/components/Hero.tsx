@@ -20,18 +20,24 @@ function Hero() {
           </p>
         </div>
         <div className="flex flex-col text-white font-bold gap-6">
-          <button className="bg-custom-orange flex items-center gap-2 justify-center p-4 shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear rounded border-2 border-custom-orange">
+          <a
+            href="#booking"
+            className="bg-custom-orange flex items-center gap-2 justify-center p-4 shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear rounded border-2 border-custom-orange"
+          >
             <span>Book Ride</span>
             <span className="text-xl">
               <AiFillCheckCircle />
             </span>
-          </button>
-          <button className="bg-black flex items-center gap-2 justify-center p-4 transition-all duration-300 ease-linear hover:bg-transparent hover:text-black rounded border-2 border-black">
+          </a>
+          <a
+            href="#booking"
+            className="bg-black flex items-center gap-2 justify-center p-4 transition-all duration-300 ease-linear hover:bg-transparent hover:text-black rounded border-2 border-black"
+          >
             <span>Learn More</span>
             <span className="text-xl">
               <IoIosArrowForward />
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </section>

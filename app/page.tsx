@@ -18,6 +18,7 @@ import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import DownloadApp from "./components/DownloadApp";
 import Footer from "./components/Footer";
+const Fade = require("react-reveal/Fade");
 
 function Home() {
   return (
@@ -27,18 +28,22 @@ function Home() {
           <main>
             <Header />
             <MobileNavbar />
-            <Hero />
+            <Fade left>
+              <Hero />
+            </Fade>
             <ToTop />
-            <Booking />
-            <BookingModal />
-            <QuickEasy />
-            <RentalFleet />
-            <SaveBig />
-            <ChooseUs />
-            <Testimonials />
-            <Faq />
-            <DownloadApp />
-            <Footer />
+            <Fade bottom>
+              <Booking />
+              <BookingModal />
+              <QuickEasy />
+              <RentalFleet />
+              <SaveBig />
+              <ChooseUs />
+              <Testimonials />
+              <Faq />
+              <DownloadApp />
+              <Footer />
+            </Fade>
           </main>
         </CurrentValueProvider>
       </InputValueProvider>
