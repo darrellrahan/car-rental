@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { navLink } from "../data/link";
 import { useTogglersContext } from "../context/togglers";
+import { usePathname } from "next/navigation";
 
 function MobileNavbar() {
   const { mobileNavbar, setMobileNavbar } = useTogglersContext();
@@ -15,7 +16,7 @@ function MobileNavbar() {
     <section id="mobile-navbar">
       <nav
         className={`fixed inset-y-0 right-0 bg-white ${
-          mobileNavbar ? "left-0" : "left-150%"
+          mobileNavbar ? "left-0" : "left-[150%]"
         } z-50 transition-all duration-300 ease-linear p-8 flex items-center justify-center flex-col`}
       >
         <button
@@ -29,7 +30,9 @@ function MobileNavbar() {
             <li key={data.id}>
               <Link
                 href={data.url}
-                className="hover:text-custom-orange transition-all duration-300 ease-linear"
+                className={`${
+                  usePathname() === data.url ? "text-custom-orange" : ""
+                } hover:text-custom-orange transition-all duration-300 ease-linear`}
                 onClick={() => setMobileNavbar(false)}
               >
                 {data.link}

@@ -23,13 +23,8 @@ module.exports = {
         "dark-green": "#2a6817",
         "dark-grey": "#777",
       },
-      spacing: {
-        "150%": "150%",
-      },
       fontSize: {
-        "3.2rem": "3.2rem",
         "2.5rem": "2.5rem",
-        xxs: "0.65rem",
       },
       boxShadow: {
         "orange-bottom": "0 10px 15px 0 rgba(255,83,48,.35);",
@@ -41,9 +36,6 @@ module.exports = {
         "book-bg": "url('/images/book-bg.png')",
         "chooseus-bg": "url('/images/chooseus-bg.png')",
         "faq-bg": "url('/images/faq-bg.png')",
-      },
-      zIndex: {
-        1000: "1000",
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(15rem, 1fr));",

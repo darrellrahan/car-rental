@@ -6,7 +6,7 @@ import { GrMail } from "react-icons/gr";
 function Footer() {
   return (
     <section id="footer">
-      <div className="bg-white px-8 py-16 mt-16 space-y-20 text-center">
+      <div className="bg-white px-8 py-16 space-y-20 text-center">
         <div className="space-y-6">
           <div className="space-y-4">
             <h1 className="font-bold text-2xl">CAR RENTAL</h1>

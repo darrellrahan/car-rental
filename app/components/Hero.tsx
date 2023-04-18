@@ -8,7 +8,7 @@ function Hero() {
       <div className="px-8 py-12 space-y-8">
         <div className="text-center font-bold space-y-2">
           <h3 className="text-xl">Plan your trip now</h3>
-          <h1 className="text-3.2rem leading-tight">
+          <h1 className="text-[3.2rem] leading-tight">
             Save <span className="text-custom-orange">big</span> with our car
             rental
           </h1>

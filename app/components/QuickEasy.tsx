@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function QuickEasy() {
   return (
-    <section id="quick">
+    <section id="quick-easy">
       <div className="px-8 py-16 text-center space-y-8">
         <div className="font-bold space-y-2">
           <h3 className="text-xl">Plan your trip now</h3>

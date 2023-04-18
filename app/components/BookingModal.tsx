@@ -19,7 +19,7 @@ function BookingModal() {
 
   return (
     <section id="booking-modal">
-      <div className="bg-white fixed inset-x-0 top-0 bottom-0 z-1000 overflow-y-auto">
+      <div className="bg-white fixed inset-x-0 top-0 bottom-0 z-50 overflow-y-auto">
         <div className="bg-custom-orange flex items-center justify-between text-white text-2xl p-4 font-bold">
           <h1>COMPLETE RESERVATION</h1>
           <button onClick={() => setBookingModal(false)}>
@@ -129,7 +129,7 @@ function BookingModal() {
                   placeholder={data.placeholder}
                   className="bg-lighter-grey p-3 text-sm placeholder:text-custom-grey rounded"
                 />
-                <span className="text-xxs">This field is required.</span>
+                <span className="text-[0.65rem]">This field is required.</span>
               </div>
             ))}
           </div>

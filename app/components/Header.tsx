@@ -4,12 +4,16 @@ import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useTogglersContext } from "../context/togglers";
 
-function Header() {
+function Header({ absolute }: { absolute: boolean }) {
   const { setMobileNavbar } = useTogglersContext();
 
   return (
     <section id="top header">
-      <header className="p-6 flex items-center justify-between">
+      <header
+        className={`${
+          absolute ? "absolute top-6 inset-x-6" : "p-6"
+        } flex items-center justify-between z-50`}
+      >
         <div>
           <Link href="/">
             <Image
