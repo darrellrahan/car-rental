@@ -25,7 +25,7 @@ function Home() {
       <InputValueProvider>
         <CurrentValueProvider>
           <main>
-            <Header absolute={false} />
+            <Header />
             <MobileNavbar />
             <Hero />
             <ToTop />

@@ -14,7 +14,7 @@ function page() {
   return (
     <TogglersProvider>
       <main>
-        <Header absolute />
+        <Header />
         <MobileNavbar />
         <BannerHero htmlId="models-hero" page="Vehicle Models" />
         <ToTop />

@@ -26,7 +26,7 @@ function Booking() {
 
   return (
     <section id="booking">
-      <div className="m-8 p-6 bg-white bg-book-bg rounded shadow-white-box space-y-8">
+      <div className="mx-8 my-0 px-6 py-6 lg:mx-28 bg-white bg-book-bg rounded shadow-white-box space-y-8">
         <div>
           <h1 className="text-2xl font-bold">Book a car</h1>
         </div>
