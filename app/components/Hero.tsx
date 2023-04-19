@@ -58,7 +58,7 @@ function Hero() {
         </div>
         <a
           href="#booking"
-          className="absolute bottom-8 inset-x-1/2 text-3xl animate-bounce"
+          className="absolute bottom-16 inset-x-1/2 text-3xl animate-bounce"
         >
           <IoIosArrowDown />
         </a>
