@@ -20,7 +20,7 @@ function ScrollTop() {
         href="#top"
         className={`fixed ${
           !goUp ? "-bottom-16" : "bottom-8"
-        } right-8 bg-custom-orange p-1.5 text-3xl text-white transition-all duration-300 ease-linear`}
+        } right-8 bg-custom-orange p-1.5 text-3xl text-white transition-all duration-300 ease-linear z-50`}
       >
         <IoIosArrowUp />
       </a>

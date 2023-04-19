@@ -162,3 +162,42 @@ export const aboutGrid = [
 
   { id: 3, img: "/images/repair-shop.png", amount: 75, text: "Repair Shop" },
 ];
+
+export const team = [
+  {
+    id: 1,
+    img: "/images/luke-miller.png",
+    name: "Luke Miller",
+    job: "Salesman",
+  },
+  {
+    id: 2,
+    img: "/images/michael-diaz.png",
+    name: "Michael Diaz",
+    job: "Business Owner",
+  },
+  {
+    id: 3,
+    img: "/images/briana-ross.png",
+    name: "Briana Ross",
+    job: "Photographer",
+  },
+  {
+    id: 4,
+    img: "/images/lauren-rivera.png",
+    name: "Lauren Rivera",
+    job: "Car Detailist",
+  },
+  {
+    id: 5,
+    img: "/images/martin-rizz.png",
+    name: "Martin Rizz",
+    job: "Mechanic",
+  },
+  {
+    id: 6,
+    img: "/images/caitlyn-hunt.png",
+    name: "Caitlyn Hunt",
+    job: "Manager",
+  },
+];
