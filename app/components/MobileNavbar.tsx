@@ -28,7 +28,7 @@ function MobileNavbar() {
         <ul className="flex flex-col items-center gap-8 font-medium text-2xl">
           {navLink.map((data) => (
             <li key={data.id}>
-              <Link
+              <a
                 href={data.url}
                 className={`${
                   usePathname() === data.url ? "text-custom-orange" : ""
@@ -36,7 +36,7 @@ function MobileNavbar() {
                 onClick={() => setMobileNavbar(false)}
               >
                 {data.link}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

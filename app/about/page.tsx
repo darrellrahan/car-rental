@@ -16,20 +16,16 @@ import ToTop from "../components/ToTop";
 function page() {
   return (
     <TogglersProvider>
-      <InputValueProvider>
-        <CurrentValueProvider>
-          <main>
-            <Header absolute />
-            <MobileNavbar />
-            <BannerHero htmlId="about-hero" page="About" />
-            <ToTop />
-            <About />
-            <QuickEasy />
-            <GetTouch />
-            <Footer />
-          </main>
-        </CurrentValueProvider>
-      </InputValueProvider>
+      <main>
+        <Header absolute />
+        <MobileNavbar />
+        <BannerHero htmlId="about-hero" page="About" />
+        <ToTop />
+        <About />
+        <QuickEasy />
+        <GetTouch />
+        <Footer />
+      </main>
     </TogglersProvider>
   );
 }
