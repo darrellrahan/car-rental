@@ -28,15 +28,17 @@ function MobileNavbar() {
         <ul className="flex flex-col items-center gap-8 font-medium text-2xl">
           {navLink.map((data) => (
             <li key={data.id}>
-              <a
-                href={data.url}
+              <button
                 className={`${
                   usePathname() === data.url ? "text-custom-orange" : ""
                 } hover:text-custom-orange transition-all duration-300 ease-linear`}
-                onClick={() => setMobileNavbar(false)}
+                onClick={() => {
+                  window.location.href = data.url;
+                  setMobileNavbar(false);
+                }}
               >
                 {data.link}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
