@@ -5,9 +5,9 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 function GetTouch() {
   return (
     <section id="get-in-touch">
-      <div className="p-8 mt-16 bg-[url('/images/getintouch-banner-bg.png')] relative">
+      <div className="p-8 bg-[url('/images/getintouch-banner-bg.png')] relative">
         <div className="absolute inset-0 bg-lighter-black/80" />
-        <div className="z-50 relative text-center space-y-8 text-4xl font-bold">
+        <div className="z-50 relative text-center space-y-8 text-2xl font-bold">
           <div>
             <h1 className="leading-tight text-white">
               Book a car by getting in touch with us

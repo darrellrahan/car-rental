@@ -47,18 +47,18 @@ export const chooseUs = [
 ];
 
 export const cars = [
-  { id: 1, car: "Audi A1 S-Line" },
+  { id: 1, car: "Audi A1" },
   { id: 2, car: "VW Golf 6" },
   { id: 3, car: "Toyota Camry" },
-  { id: 4, car: "BMW 320 ModernLine" },
-  { id: 5, car: "Mercedez-Benz GLK" },
+  { id: 4, car: "BMW 320" },
+  { id: 5, car: "Mercedez GLK" },
   { id: 6, car: "VW Passat CC" },
 ];
 
 export const carDetails = [
   {
     id: 1,
-    car: "Audi A1 S-Line",
+    car: "Audi A1",
     price: 45,
     model: "Audi",
     mark: "A1",
@@ -94,7 +94,7 @@ export const carDetails = [
   },
   {
     id: 4,
-    car: "BMW 320 ModernLine",
+    car: "BMW 320",
     price: 35,
     model: "320",
     mark: "BMW",
@@ -106,7 +106,7 @@ export const carDetails = [
   },
   {
     id: 5,
-    car: "Mercedez-Benz GLK",
+    car: "Mercedez GLK",
     price: 50,
     model: "Benz GLK",
     mark: "Mercedez",
