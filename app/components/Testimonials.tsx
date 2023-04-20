@@ -4,7 +4,7 @@ import React from "react";
 function Testimonials() {
   return (
     <section id="testimonials">
-      <div className="p-8 my-8 space-y-10">
+      <div className="p-8 my-20 space-y-10">
         <div className="space-y-6">
           <div className="text-center font-bold space-y-2">
             <h3 className="text-xl">Reviewed by People</h3>
