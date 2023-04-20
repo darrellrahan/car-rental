@@ -8,7 +8,7 @@ type CurrentValueContextType = {
 };
 
 const CurrentValueContext = React.createContext<CurrentValueContextType>({
-  rentalFleet: "Audi A1 S-Line",
+  rentalFleet: "Audi A1",
   setRentalFleet: () => {},
 });
 
@@ -19,7 +19,7 @@ export const CurrentValueProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [rentalFleet, setRentalFleet] = useState("Audi A1 S-Line");
+  const [rentalFleet, setRentalFleet] = useState("Audi A1");
 
   return (
     <CurrentValueContext.Provider

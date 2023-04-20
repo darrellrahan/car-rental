@@ -26,35 +26,33 @@ function Booking() {
 
   return (
     <section id="booking">
-      <div className="mx-8 my-0 px-6 py-6 lg:mx-28 bg-white bg-book-bg rounded shadow-white-box space-y-8">
+      <div className="mx-8 my-16 p-6 lg:p-12 lg:mx-28 bg-white bg-book-bg rounded shadow-white-box space-y-8">
         <div>
           <h1 className="text-2xl font-bold">Book a car</h1>
         </div>
-        <div className="space-y-5">
-          {bookingFields.red && (
-            <div className="flex items-center justify-between bg-custom-pink py-2 px-4 rounded text-custom-maroon font-medium">
-              <p>All fields required!</p>
-              <button
-                onClick={() =>
-                  setBookingFields({ ...bookingFields, red: false })
-                }
-              >
-                <AiOutlineClose />
-              </button>
-            </div>
-          )}
-          {bookingFields.green && (
-            <div className="flex items-center justify-between bg-light-green py-2 px-4 rounded text-dark-green font-medium">
-              <p>Successfully booked!</p>
-              <button
-                onClick={() =>
-                  setBookingFields({ ...bookingFields, green: false })
-                }
-              >
-                <AiOutlineClose />
-              </button>
-            </div>
-          )}
+        {bookingFields.red && (
+          <div className="flex items-center justify-between bg-custom-pink py-2 px-4 rounded text-custom-maroon font-medium">
+            <p>All fields required!</p>
+            <button
+              onClick={() => setBookingFields({ ...bookingFields, red: false })}
+            >
+              <AiOutlineClose />
+            </button>
+          </div>
+        )}
+        {bookingFields.green && (
+          <div className="flex items-center justify-between bg-light-green py-2 px-4 rounded text-dark-green font-medium">
+            <p>Successfully booked!</p>
+            <button
+              onClick={() =>
+                setBookingFields({ ...bookingFields, green: false })
+              }
+            >
+              <AiOutlineClose />
+            </button>
+          </div>
+        )}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-end">
           {bookingInputs.select.map((data) => (
             <div key={data.id} className="flex flex-col gap-4">
               <label htmlFor={data.htmlId} className="flex items-center gap-2">
@@ -110,27 +108,27 @@ function Booking() {
               />
             </div>
           ))}
-        </div>
-        <div>
-          <button
-            className="bg-custom-orange w-full shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear text-white p-2 font-bold rounded"
-            onClick={() => {
-              setBookingFields({
-                ...bookingFields,
-                red:
-                  bookingDate["pickup-date"] !== "" &&
-                  bookingDate["dropof-date"] !== ""
-                    ? false
-                    : true,
-              });
-              bookingDate["pickup-date"] !== "" &&
-              bookingDate["dropof-date"] !== ""
-                ? setBookingModal(true)
-                : null;
-            }}
-          >
-            Search
-          </button>
+          <div>
+            <button
+              className="bg-custom-orange w-full shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear text-white p-2 font-bold rounded"
+              onClick={() => {
+                setBookingFields({
+                  ...bookingFields,
+                  red:
+                    bookingDate["pickup-date"] !== "" &&
+                    bookingDate["dropof-date"] !== ""
+                      ? false
+                      : true,
+                });
+                bookingDate["pickup-date"] !== "" &&
+                bookingDate["dropof-date"] !== ""
+                  ? setBookingModal(true)
+                  : null;
+              }}
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
     </section>
