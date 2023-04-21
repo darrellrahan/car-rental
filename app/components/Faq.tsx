@@ -31,7 +31,7 @@ function Faq() {
 
   return (
     <section id="faq">
-      <div className="bg-faq-bg bg-white bg-no-repeat bg-[0_70%] px-8 py-16 my-16 space-y-16">
+      <div className="bg-faq-bg bg-white bg-no-repeat bg-[0_70%] px-8 lg:px-[22rem] py-16 lg:py-24 my-16 space-y-16">
         <div className="space-y-6">
           <div className="text-center font-bold space-y-2">
             <h3 className="text-xl">FAQ</h3>
@@ -41,8 +41,8 @@ function Faq() {
           </div>
           <div>
             <p className="text-center text-custom-grey">
-              Frequently Asked Questions About the Booking Process on Our
-              Website.
+              Frequently Asked Questions About the Car Rental Booking Process on
+              Our Website: Answers to Common Concerns and Inquiries.
             </p>
           </div>
         </div>
@@ -66,7 +66,9 @@ function Faq() {
               </button>
               <p
                 className={`${
-                  getState(data.id) ? "max-h-[30rem] py-6" : "max-h-0 py-0"
+                  getState(data.id)
+                    ? "max-h-[30rem] lg:max-h-48 py-6"
+                    : "max-h-0 py-0"
                 } text-left px-6 transiion-all duration-300 ease-linear overflow-hidden text-custom-grey leading-relaxed`}
               >
                 {data.answer}

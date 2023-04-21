@@ -16,7 +16,7 @@ function ChooseUs() {
             className="m-auto w-full"
           />
         </div>
-        <div className="flex flex-col gap-8 lg:flex-row lg:gap-32 lg:items-center">
+        <div className="flex flex-col gap-12 lg:flex-row lg:gap-32 lg:items-center">
           <div className="space-y-8 lg:basis-1/2">
             <div className="font-bold space-y-2">
               <h3 className="text-xl">Why Choose Us</h3>
