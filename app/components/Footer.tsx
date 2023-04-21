@@ -6,7 +6,7 @@ import { GrMail } from "react-icons/gr";
 function Footer() {
   return (
     <section id="footer">
-      <div className="bg-white px-8 py-16 space-y-20 text-center">
+      <div className="bg-white px-8 lg:px-28 py-16 text-center grid grid-cols-1 lg:grid-cols-4 lg:text-left gap-20">
         <div className="space-y-6">
           <div className="space-y-4">
             <h1 className="font-bold text-2xl">CAR RENTAL</h1>
@@ -20,7 +20,7 @@ function Footer() {
               <li>
                 <Link
                   href="tel:123456789"
-                  className="flex items-center justify-center gap-2 hover:text-custom-orange transition-all duration-300 ease-linear"
+                  className="flex items-center justify-center lg:justify-start gap-2 hover:text-custom-orange transition-all duration-300 ease-linear"
                 >
                   <span>
                     <BsFillTelephoneFill />
@@ -31,7 +31,7 @@ function Footer() {
               <li>
                 <Link
                   href="mailto:carrental@gmail.com"
-                  className="flex items-center justify-center gap-2 hover:text-custom-orange transition-all duration-300 ease-linear"
+                  className="flex items-center justify-center lg:justify-start gap-2 hover:text-custom-orange transition-all duration-300 ease-linear"
                 >
                   <span>
                     <GrMail />

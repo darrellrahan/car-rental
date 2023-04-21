@@ -46,7 +46,7 @@ function Header() {
           <button className="hover:text-custom-orange transition-all duration-300 ease-linear">
             Sign In
           </button>
-          <button className="bg-custom-orange py-3 px-5 text-white shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear rounded">
+          <button className="bg-custom-orange py-3 px-7 text-white shadow-orange-bottom hover:shadow-orange-bottom-hov transition-all duration-300 ease-linear rounded">
             Register
           </button>
         </div>
