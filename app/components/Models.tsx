@@ -8,8 +8,8 @@ import { BsFillFuelPumpFill } from "react-icons/bs";
 function Models() {
   return (
     <section id="models-main">
-      <div className="p-8 my-8">
-        <div className="grid grid-cols-fluid gap-8">
+      <div className="py-8 px-8 lg:px-48 lg:py-16 my-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {carDetails.map((data) => (
             <div
               key={data.id}
@@ -21,14 +21,16 @@ function Models() {
                   alt={data.car}
                   width={800}
                   height={800}
-                  className="w-full h-full object-cover rounded-t"
+                  className="w-full h-full lg:h-60 object-cover rounded-t"
                 />
               </div>
               <div className="p-6 space-y-6">
                 <div className="flex items-center justify-between">
                   <div className="space-y-1">
                     <div>
-                      <h1 className="font-bold text-xl">{data.car}</h1>
+                      <h1 className="font-bold text-xl lg:text-2xl">
+                        {data.car}
+                      </h1>
                     </div>
                     <div className="text-[#ffc933] flex items-center">
                       <span>
@@ -49,7 +51,9 @@ function Models() {
                     </div>
                   </div>
                   <div className="text-right">
-                    <h1 className="font-bold text-xl">${data.price}</h1>
+                    <h1 className="font-bold text-xl lg:text-2xl">
+                      ${data.price}
+                    </h1>
                     <p className="text-custom-grey">per day</p>
                   </div>
                 </div>
